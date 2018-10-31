@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+
+
+body{
+
+	text-align: center !important;
+}
+h1 {
+	color: blue;
+	font-size: 40px;
+}
+
+
+.ui-page-theme-a a {
+	font-size: 30px;
+	color: blue !important;
+	text-decoration: underline ;
+
+}
+
+#header {
+
+	background-color: yellow;
+	text-shadow: none;
+	color: blue;
+	height: 50px;
+	border: none;
+
+}
+
+#footer {
+
+	background-color: yellow;
+	text-shadow: none;
+	color: blue;
+	height: 50px;
+	border: none;
+}
+
+#ui.content {
+
+	text-align: center !important;
+}
+
+#goBack {
+	font-size: 16px;
+}
+
+#formular {
+
+	padding-top: 50px;
+}
+

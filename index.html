@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- hier nochmals mein css um dinge im framework zu überschreiben -->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css?v=3">
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+    <div data-role="header" id="header">
+        <h1>Glick</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <h1>Kommen Sie, Kommen Sie.</h1>
+        <p class="text"> Dein Glücksbarometer verrät dir so einiges. Nehmen Sie jetzt teil und sie bekommen ein MESSERSET GRATIS dazu. </p>
+        <a id="link" href="#pagetwo" data-transition="flip">zur Umfrage</a>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed" id="footer">
+        <h2>La lala lalalalalala </h2>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="pagetwo">
+    <div data-role="header"  id="header">
+        <h1>Fast geschafft!</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+        <a id="goBack" href="#pageone" data-transition="none">go back</a>
+
+
+        <form id="formular" action="meldung.php" method="post">
+
+            <input type="text" placeholder="Vorname" name="vorname" data-mini="true" />
+           <input type="text" placeholder="Nachname" name="nachname" data-mini="true" />
+           <label for="slider-1">Wie glücklich bist du?</label>
+            <input type="range" name="slider" id="slider-1" value="60" min="0" max="100" />
+            <input type="submit" name="Submit" value="Absenden" >
+        </form>          
+    </div>
+
+    <div data-role="footer" data-position="fixed" id="footer">
+        <h2>La lala lalalalalala la </h2>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
